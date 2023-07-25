@@ -54,7 +54,7 @@
     <!-- header section -->
     <header class="container mx-auto">
       <nav
-        class="bg-custom-color flex items-center justify-between px-10 py-6 rounded-full mt-12"
+        class="lg:bg-custom-color flex flex-col lg:flex-row items-center justify-between px-10 py-6 rounded-full mt-12"
       >
         <div class="hidden md:flex md:w-auto items-center justify-between">
           <ul
@@ -84,13 +84,15 @@
         <div>
           <div class="flex items-center gap-2">
             <img src="./images/logo.png" alt="" />
-            <h2 class="font-lato text-4xl font-bold text-white">Fruit Brust</h2>
+            <h2 class="font-lato text-4xl font-bold lg:text-white">
+              Fruit Brust
+            </h2>
           </div>
         </div>
-        <div class="relative">
-          <i class="fa-solid fa-magnifying-glass absolute ml-80 mt-5"></i>
+        <div class="relative hidden lg:block">
+          <i class="fa-solid fa-magnifying-glass absolute lg:ml-80 lg:mt-5"></i>
           <input
-            class="py-4 pl-7 rounded-full w-[400px]"
+            class="py-4 pl-7 rounded-full w-auto lg:w-[400px]"
             type="text"
             placeholder="Search here"
           />
