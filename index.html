@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,13 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome link -->
+
+    <script
+      src="https://kit.fontawesome.com/5c95e5cc68.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- customized  -->
 
     <title>Fruit Brust</title>
@@ -31,7 +38,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "custom-color": "#F85559",
             },
           },
         },
@@ -43,5 +50,54 @@
       }
     </style>
   </head>
-  <body></body>
+  <body class="font-lato">
+    <!-- header section -->
+    <header class="container mx-auto">
+      <nav
+        class="bg-custom-color flex items-center justify-between px-10 py-6 rounded-full mt-12"
+      >
+        <div class="hidden md:flex md:w-auto items-center justify-between">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="py-2 pl-3 pr-4 md:p-0 text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 pl-3 pr-4 text-white md:p-0">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 pl-3 pr-4 text-white md:p-0"
+                >All Fruits</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="./images/logo.png" alt="" />
+            <h2 class="font-lato text-4xl font-bold text-white">Fruit Brust</h2>
+          </div>
+        </div>
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute ml-80 mt-5"></i>
+          <input
+            class="py-4 pl-7 rounded-full w-[400px]"
+            type="text"
+            placeholder="Search here"
+          />
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
